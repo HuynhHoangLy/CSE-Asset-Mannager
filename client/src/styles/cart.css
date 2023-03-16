@@ -1,0 +1,374 @@
+.checklist-container {
+    width: 325px;
+    height: 510px;
+    border-radius: 0px 0px 30px 30px;
+    background-color: #6F7DB0;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    border: none;
+    z-index: 2;
+    color: #000;
+    animation: dropdown 0.5s ease-out;
+}
+
+@keyframes dropdown {
+    from {top: -510px}
+    to {top: 60px}
+}
+
+
+.scrollChecklist {
+    overflow-y: scroll;
+    height: 350px;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+
+#checkList::-webkit-scrollbar {
+    width: 5px;
+}
+
+#checkList:-webkit-scrollbar-track {
+    background: none;
+}
+
+#checkList::-webkit-scrollbar-thumb {
+    background: none;
+}
+
+.checklist-title {
+    font-weight: 900;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #FFF;
+    width: 50%;
+}
+
+.checklist-card {
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.checklist-name {
+    position: relative;
+    font-weight: bold;
+    left: 20px;
+    top: 15px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.checklist-note {
+    width: 270px;
+    left: 20px;
+    top: 10px;
+    position: relative;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.checklist-button {
+    background-color: #EEF1F4;
+    border-radius: 8px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+}
+
+.trash {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+.trash:hover {
+    background-color: #DD0000 !important;
+}
+
+.limit {
+    background-color: #DADADA !important;
+    color: #757575 !important;
+}
+
+.checklist-button:hover {
+    background-color: #DADADA;
+}
+
+.checklist-quantity {
+    font-size: 14px;
+    float: right;
+    color: black;
+    padding-top: 5px;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.checklist-submit {
+    width: 100%;
+    height: 110px;
+    background-color: #334173;
+    border-radius: 30px;
+    padding: none;
+    position: relative;
+}
+
+.checklist-item-quantity {
+    font-size: 14px;
+    color: white;
+    top: 25%;
+    position: absolute;
+    left: 10%
+}
+
+.checklist-submit-button {
+    width: 120px;
+    height: 50px;
+    right: 20px;
+    top: 30%;
+    border: none;
+    background-color: #fff;
+    color: #212C58;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.checklist-submit-button:hover {
+    cursor: pointer;
+    background-color: #212C58;
+    color: #fff
+}
+
+
+.checklist-submit-modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.checklist-submit-modal-container {
+    width: 650px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 30px;
+}
+
+.checklist-submit-modal-container.first{
+    animation: fadeIn .6s, slideIn .6s linear;
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(400px);
+      animation-timing-function: ease-out;
+    }
+    60% {
+      transform: translateY(-30px);
+      animation-timing-function: ease-in;
+    }
+    80% {
+      transform: translateY(10px);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform: translateY(0px);
+      animation-timing-function: ease-in;
+    }
+  }
+  
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+.checklist-submit-modal-title {
+    margin-bottom: 20px;
+    border-bottom: 2px dashed #212C58;
+    color: #48578E;
+}
+
+.checklist-submit-modal-content {
+    width: 100%;
+    height: 80%;
+}
+
+.checklist-submit-modal-content .checklist-card {
+    width: 100%;
+    height: 70px;
+    /* border: 1.5px solid #212C58; */
+    border-radius: 0px !important;
+    /* background-color: #6F7DB0; */
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: relative;
+    border-bottom: 1px solid #212C58;
+    margin: 0;
+}
+
+.checklist-card-top {
+
+    width: 90%;
+    height: 50%;
+    /* background-color: yellow; */
+    position: relative;
+    font-size: 18px;
+
+}
+.checklist-card-top-left {
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+.checklist-card-top-right {
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+.checklist-card-bottom {
+    width: 90%;
+    height: 50%;
+    /* background-color: yellow; */
+    position: relative;
+    font-size: 14px;
+}
+
+.checklist-card-bottom-left {
+
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.checklist-card-bottom-left p {
+    width: 200px;
+}
+
+.checklist-datepicker {
+    width: 100px;
+    
+}
+
+.checklist-card-bottom-right {
+    position: absolute;
+    right: 0;
+    /* top: -10px; */
+    top: 5px;
+}
+
+.checklist-card-bottom-right p {
+    font-size: 10px;
+    font-style: italic;
+    color: red;
+    font-weight: 400;
+}
+
+.checklist-valid {
+    color: green !important;
+}
+
+.checklist-card-checkbox {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.checklist-submit-modal-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.checklist-submit-modal-content:-webkit-scrollbar-track {
+    background: none;
+}
+
+.checklist-submit-modal-content::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+    /* margin-right: 5px; */
+}
+
+.checklist-submit-modal-button {
+    position: absolute;
+    bottom: 30px;
+    width: 250px;
+    height: 45px;
+    /* background-color: grey; */
+}
+
+.checklist-submit-modal-button-submit {
+    width: 120px;
+    height: 45px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #212C58;
+    color: #fff;
+    transition: all 0.4s linear;
+}
+
+.checklist-submit-modal-button-submit:hover {
+    color: #212C58;
+    background-color: #fff;
+    border: 2px solid #212C58;
+}
+
+.checklist-submit-modal-button-cancel {
+    width: 120px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    color: gray; 
+    transition: all 0.3s linear;
+}
+
+.checklist-submit-modal-button-cancel:hover {
+    background-color: gray;
+    color: rgb(200, 200, 200); 
+}

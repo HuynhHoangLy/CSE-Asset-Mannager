@@ -1,0 +1,167 @@
+/*  */
+.current_orders .user_name_col {
+    width: 300px;
+}
+
+.current_orders .user_category_col {
+    width: 250px;
+    justify-content: left;
+}
+
+.current_orders .user_quantity_col {
+    width: 80px;
+}
+
+.current_orders .user_createdAt_col {
+}
+
+.current_orders .user_returnDate_col {
+}
+
+.current_orders .user_action_col {
+    width: 100px;
+}
+
+.current_orders .user_status_col {
+
+}
+
+.borrowing_orders .user_name_col {
+    width: 300px;
+}
+
+.borrowing_orders .user_category_col {
+    width: 250px;
+    justify-content: left;
+}
+
+.returned_orders .user_name_col {
+    width: 300px;
+}
+.returned_orders .user_category_col {
+    width: 250px;
+    justify-content: left;
+}
+.returned_orders .user_quantity_col {
+    width: 100px;
+}
+.returned_orders .user_createdAt_col {
+
+}
+.returned_orders .user_confirmAt_col {
+
+}
+.returned_orders .user_returnDate_col {
+
+}
+
+
+.borrowing_orders .user_quantity_col {}
+
+.borrowing_orders .user_download_col {
+    width: 160px;
+}
+
+.borrowing_orders .user_acceptDate_col {
+    width: 160px;
+}
+
+.borrowing_orders .user_returnDate_col {
+    width: 160px;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .borrowing_orders .user_download_col {
+        width: 80px;
+    }
+    .returned_orders .user_name_col {
+        width: 250px;
+    }
+    .returned_orders .user_category_col {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .current_orders .user_name_col {
+        width: 230px;
+    }
+
+    .borrowing_orders .user_name_col {
+        width: 230px;
+    }
+
+}
+
+/*display mobile when the browser window is 991px width or less*/
+@media only screen and (max-width: 970px) {
+    .current_orders .user_category_col {
+        display: none;
+    }
+
+    .borrowing_orders .user_category_col {
+        display: none;
+    }
+
+    .returned_orders .user_category_col {
+        display: none;
+    }
+    
+
+}
+
+@media only screen and (max-width: 720px) {
+    .current_orders .user_createdAt_col {
+        display: none;
+    }
+
+    .current_orders .user_name_col {
+        width: 200px;
+    }
+
+    .borrowing_orders .user_acceptDate_col {
+        display: none;
+    }
+
+    .returned_orders .user_createdAt_col {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .current_orders .user_createdAt_col {
+        display: none;
+    }
+
+    .current_orders .user_status_col {
+        display: none;
+    }
+
+    .current_orders .user_action_col {
+        width: 50px;
+    }
+
+    .current_orders .user_returnDate_col {
+        width: 130px;
+    }
+
+    .borrowing_orders .user_quantity_col {
+        width: 80px;
+    }
+
+    .borrowing_orders .user_name_col {
+        width: 200px;
+    }
+
+    .returned_orders .user_confirmAt_col {
+        width: 140px;
+    }
+
+    .returned_orders .user_returnDate_col {
+        width: 140px;
+    }
+    .returned_orders .user_name_col {
+        width: 200px;
+    }
+}

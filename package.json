@@ -1,0 +1,30 @@
+{
+  "name": "cse-asset-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm run build",
+    "install-server": "cd api && npm install",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build && npm run install-server",
+    "start": "node api/app.js",
+    "server": "npm run test --prefix api",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently -n server,client -c red,green \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanlethanh/CSE-Asset-Manager.git"
+  },
+  "author": "Tan Le Thanh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanlethanh/CSE-Asset-Manager/issues"
+  },
+  "homepage": "https://github.com/tanlethanh/CSE-Asset-Manager#readme",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
+}

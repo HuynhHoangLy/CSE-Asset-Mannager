@@ -1,0 +1,371 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Poppins', sans-serif !important;
+    --height-nav: 15vh;
+    --height-content: 67.5vh;
+}
+
+/* Header section */
+
+#header {
+    width: 100%;
+    height: var(--height-nav);
+    left: 0px;
+    top: 0px;
+    background: #6171A9;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+}
+
+#header li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#header .header-left {
+    width: auto;
+}
+
+#header .header-right {
+    position: absolute;
+    right: 20px;
+}
+
+.text-logo {
+    padding: 0 75px;
+    text-decoration: none;
+    line-height: var(--height-nav);
+    position: relative;
+}
+
+.text-logo em {
+    font-size: 2em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.text-logo .text-logo-1 {
+    color: #212C58;
+    margin-right: 10px;
+}
+
+.text-logo .text-logo-2 {
+    color: #C0CFFA;
+}
+
+.nav-btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: var(--height-nav);
+    padding: 0 24px;
+    height: 100%;
+}
+
+.nav-btn:hover , #header .phone-tablet i:hover {
+    background-color: #48578E;
+}
+
+.nav-btn i {
+    font-size: 1.5em;
+}
+
+/* content of the web */
+
+.content {
+    padding-top: var(--height-nav);
+    height: var(--height-content);
+    width: 100%;
+    background-color: #6F7DB0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error {
+    margin-top: 70px;
+    font-size: 80px;
+    font-weight: 900;
+    color: #fff;
+}
+.error_content {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* foot of the web */
+
+.footer {
+    width: 100%;
+    height: calc(100vh - var(--height-content));
+    background-color: #212C58;
+    color: #fff;
+    position: relative;
+}
+
+.top_footer {
+    position: relative;
+    padding-top: 30px;
+}
+
+.top_footer a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.top_footer .item {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    position: absolute;
+    left: 100px;
+}
+
+.navi {
+    position: absolute;
+    right: 500px;
+}
+
+.item i {
+    margin-right: 15px;
+    color: #757575;
+}
+
+.contact {
+    position: absolute;
+    right: 100px;
+}
+
+.bot_footer {
+    margin-top: 100px;
+}
+
+.bot_footer .social {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.bot_footer .social i {
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+.bot_footer .another {
+    position: relative;
+    padding: 0 100px;
+    width: 100%;
+}
+
+.another h4 {
+    display: inline-block;
+    size: 2px;
+    color: #fff;
+    background-color: #212C58;
+}
+
+.another .left {
+    position: absolute;
+}
+
+.another .right{
+    position: absolute;
+    right: 100px;
+}
+
+.another .right h4 {
+    margin-left: 100px;
+}
+
+/* responsive */
+
+#header .phone-tablet {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+}
+
+.phone-tablet .pandt {
+    position: relative;
+    text-decoration: none;
+    display: none;
+    color: #fff;
+    font-weight: 700;
+    line-height: var(--height-nav);
+    padding: 0 24px;
+    height: 100%;
+    font-size: 2.5em;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.site {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 320px;
+    max-width: 100%;
+    text-decoration: none;
+    background-color: #fff;
+    color: #212C58;
+    display: none;
+}
+
+/* tablet */
+
+@media only screen and (max-width: 64em) {
+    html {
+        --height-nav: 10vh;
+        --height-content: 68.5vh;
+    }
+    #header li.header-right {
+        display: none;
+    }
+    #header .phone-tablet .pandt {
+        display: inline-block;
+    }
+    .phone-tablet:last-child {
+        padding-right: 0 24px;
+    }
+    @media only screen and (max-width: 57.25em) {
+        html {
+            --height-nav: 10vh;
+            --height-content: 69.5vh;
+        }
+        #header li.header-right {
+            display: none;
+        }
+        #header .phone-tablet .pandt {
+            display: inline-block;
+        }
+        .phone-tablet:last-child {
+            padding-right: 0 24px;
+        }
+        .footer .info, .footer .social, .footer .another .left {
+            left: 0;
+            margin: 0 1em;
+        }
+        .footer .contact {
+            right: 0;
+            margin-right: 1em;
+        }
+        .another .right h4 {
+            right: 0;
+            margin: 0 30px;
+            font-size: 1em;
+        }
+        .footer .navi {
+            right: 50%;
+        }
+    }
+}
+
+@media only screen and (max-width: 48em) and (min-width: 37.4375em) {
+    html {
+        --height-nav: 10vh;
+        --height-content: 69.5vh;
+    }
+    #header li.header-right {
+        display: none;
+    }
+    #header .phone-tablet .pandt {
+        display: inline-block;
+    }
+    .phone-tablet:last-child {
+        padding-right: 0 24px;
+    }
+    .footer .info, .footer .social, .footer .another .left {
+        left: 0;
+        margin: 0 1em;
+    }
+    .footer .contact {
+        right: 0;
+        margin-right: 1em;
+    }
+    .another .right h4 {
+        right: 0;
+        margin: 0 30px;
+        font-size: 1em;
+    }
+    .footer .navi {
+        right: 50%;
+    }
+    @media only screen and (max-width: 46.875em) {
+        html {
+            --height-content: 30.5em;
+        }
+        #header {
+            font-size: small;
+        }
+        .footer {
+            font-size: small;
+        }
+        .footer .right h4{
+            margin: 0 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    html {
+        --height-nav: 7vh;
+        --height-content: 50.5vh;
+    }
+    #header {
+        font-size: xx-small;
+    }
+    .text-logo {
+        padding: 0 25px;
+    }
+    .phone-tablet .pandt {
+        padding: 0 10px;
+    }
+    .content .error {
+        font-size: 50px;
+    }
+    .content .error_content {
+        font-size: 15.625px;
+    }
+    .footer {
+        font-size: small;
+    }
+    .footer .right h4{
+        margin: 0 5px;
+    }
+    @media only screen and (max-width: 33.75em) {
+        .footer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer .info, .footer .navi, .footer .contact {
+            left: 50%;
+            width: 100%;
+        }
+        .footer .top_footer {
+            width: 100%;
+        }
+    }
+}
+

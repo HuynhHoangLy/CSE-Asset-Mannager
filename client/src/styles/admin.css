@@ -1,0 +1,244 @@
+.dashboard_guide {
+    padding-left: 30px;
+    color: gray;
+    text-align: left;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.dashboard_container {
+    background-color: #fff;
+    width: 100%;
+}
+
+.member_container {
+    background-color: #fff;
+    width: 100%;
+}
+
+.admin_container {
+    background-color: #fff;
+    width: 100%;
+}
+
+/* admin */
+.toggle_admin {
+    font-size: 12px;
+    color: #212C58;
+    font-style: italic;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.delete_user {
+    color: #A30D11;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.isAdmin {
+    color: green;
+    font-size: 0.7em;
+    margin-left: 3px;
+}
+
+.menu_list_admin {
+    border: none;
+    width: 200px;
+    height: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    background-color: #48578E;
+}
+
+.menu_list_admin:hover {
+    color: #212C58;
+}
+
+.menu_list_admin.chosen {
+    background: #fff !important;
+    border-radius: 15px;
+    color: #212C58;
+}
+
+/* For Item page */
+.item_add {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.item_add_button {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #48578E;
+    font-size: 1.4rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+}
+
+.item_add_button:hover {
+    background-color: #212C58;
+}
+
+.item_delete_chosen {
+    color: red;
+}
+
+.item_name_col {
+    /* padding-left: 10px; */
+    width: 200px !important;
+    justify-content: left !important;
+    cursor: pointer;
+}
+
+.item_category_col {
+    width: 200px !important;
+    justify-content: left !important;
+    cursor: pointer;
+}
+
+.item_available_col {}
+
+.item_orders_col {}
+
+.item_updatedDate_col {
+    width: 150px !important;
+}
+
+.item_description_col {
+    width: 250px !important;
+    justify-content: left !important;
+}
+
+.item_delete_col {
+    justify-content: left !important;
+}
+
+/* For User page */
+.user_email_col {
+    width: 250px !important;
+    flex-grow: 1 !important;
+    text-align: left !important;
+    justify-content: left !important;
+    padding-left: 30px;
+}
+
+.user_name_col {
+    text-align: left !important;
+    justify-content: left !important;
+    width: 230px !important;
+    cursor: pointer;
+}
+
+.user_code_col {
+    width: 160px;
+}
+
+.user_phone_col {
+    width: 160px;
+}
+
+/* for orders page */
+.order_name_item {
+    cursor: pointer;
+    text-align: left !important;
+    justify-content: left !important;
+}
+
+.order_quantity {}
+
+.order_updated_date {
+    width: 200px !important;
+}
+
+.order_return_date {}
+
+.order_name_user {
+    cursor: pointer;
+    text-align: left !important;
+    justify-content: left !important;
+}
+
+
+.order_accept_button {
+    font-weight: 400;
+    background-color: #EBF9F1;
+    color: #1F9254;
+    border: 1.5px solid #1F9254;
+    border-radius: 15px;
+    color: #1F9254;
+    padding: 4px 8px;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.order_accept_button.chosen {
+    background-color: #1F9254;
+    color: #EBF9F1;
+}
+
+.order_deny_button {
+    font-weight: 400;
+    background-color: #fff;
+    border: 1.5px solid #A30D11;
+    border-radius: 15px;
+    color: #A30D11;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.order_deny_button.chosen {
+    background-color: #A30D11;
+    color: #FBE7E8;
+}
+
+.no_content {
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 40px;
+    color: #212C58;
+}
+
+.image-logo {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* responsive */
+@media only screen and (max-width: 1200px) {
+    #menu {
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+/*display mobile when the browser window is 991px width or less*/
+@media only screen and (max-width: 970px) {
+
+}
+
+@media only screen and (max-width: 720px) {
+
+}
+
+@media only screen and (max-width: 520px) {
+
+}
